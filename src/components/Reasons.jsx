@@ -10,7 +10,7 @@ const Reasons = () => {
         </div>
       <div className="reasons-container">
         {reasonsData.map((reason) => (
-        <div className="reason">
+        <div className="reason" data-aos="flip-right">
           <div className="text-container">
             <h3 className="reason-title">{reason.title}</h3>
             <p className="reason-detail">

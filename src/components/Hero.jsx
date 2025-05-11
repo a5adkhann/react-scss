@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <>
             <div className="hero-container">
-                <div className="content">
+                <div className="content" data-aos="fade-left">
                     <h1>Netflix Original</h1>
 
                     <div className="rating-stars">
@@ -23,7 +23,7 @@ const Hero = () => {
                         <button className='my-list'><TbBrandNetflix /> My List</button>
                     </div>
                 </div>
-                <div className="image">
+                <div className="image" data-aos="fade-right">
                     <img src={heroImage} alt="" />
                 </div>
             </div>

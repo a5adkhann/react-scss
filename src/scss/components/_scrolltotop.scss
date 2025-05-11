@@ -1,0 +1,17 @@
+.scrollTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.scrollTop.visible {
+  opacity: 1;
+}
