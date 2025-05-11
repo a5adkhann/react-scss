@@ -1,0 +1,31 @@
+.reasons-heading {
+    padding: 0 20px;
+}
+
+.reasons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    padding: 20px 20px;
+    gap: 20px;
+    .reason {
+        background: var(--reason-card-bg);
+        padding: 10px;
+        height: 20rem;
+        position: relative;
+        border-radius: 5px;
+        box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.2);
+        .symbol {
+            position: absolute;
+            bottom: 1px;
+            right: 2rem;
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .reasons-container {
+        grid-template-columns: repeat(1, 1fr);
+    }   
+}

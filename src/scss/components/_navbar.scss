@@ -1,0 +1,38 @@
+.navbar {
+    background-color: var(--navbar-footer-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    .navbar-logo {
+        img {
+            width: 30px;
+        }
+    }
+    .navbar-items {
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+            li {
+                transition: transform 0.1s ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                    transform: translateY(-2px);
+                    color: var(--nav-hover-text);
+                }
+            }
+        }
+    }
+    .navbar-toggle {
+        visibility: hidden;       
+    }
+    @media screen and (max-width: 375px){
+        .navbar-items {
+            display: none;
+        }
+        .navbar-toggle {
+            visibility: visible;
+        }
+    }
+}

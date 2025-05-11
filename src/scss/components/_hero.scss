@@ -1,0 +1,44 @@
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    align-items: center;
+    .content {
+        h1 {
+            text-transform: uppercase;
+        }
+        .rating-stars {
+            font-size: 20px;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 2rem;
+        }
+        .btns {
+            display: flex;
+            gap: 10px;
+            button.play {
+                background-color: var(--hero-btn-play-bg);
+                color: var(--light);
+                border: none;
+                padding: 10px 2rem;
+            }
+            button.my-list {
+                background: transparent;
+                color: var(--dark);
+                border: 1px solid var(--dark);
+                padding: 10px 2rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .hero-container {
+        flex-direction: column;
+        gap: 20px;
+        .image {
+            img {
+                width: 18rem;
+            }
+        }
+    }        
+}
